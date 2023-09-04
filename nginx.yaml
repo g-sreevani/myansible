@@ -1,0 +1,12 @@
+- name: install nginx
+  hosts: mongodb
+  become: yes # this will give roor access
+  tasks:
+  - name : installing nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name: starting nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
