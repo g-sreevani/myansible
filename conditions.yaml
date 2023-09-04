@@ -9,7 +9,6 @@
     register:  out # out is variable name
     ignore_errors: true
 
-    - name: print the command output
-      ansible.builtin.debug:
-       msg: "output: {{out}}"
-        
+  - name: print the command output
+    ansible.builtin.debug:
+     msg: "output: {{out}}"
