@@ -1,0 +1,15 @@
+- name: loops in ansible
+  hosts: localhost # u no need to give username and password through ansible command line 
+  become: yes
+  tasks:
+  - name: installing packages
+    ansible.builtin.yum:
+     name: "{{item.name}}"
+     state: "{{item.state}}"
+     #list of map
+    loop:
+     - {name: 'nginx',state: 'absent'} 
+     - {name: 'postfix',state: 'installed'} 
+     - {name: 'mailx',state: 'absent'} 
+     
+     
