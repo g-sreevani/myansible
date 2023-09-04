@@ -9,10 +9,10 @@
     ansible.builtin.debug:
      msg: "money is {{money}} and land is {{land}}"
   - name: inherit values from play and add and override
-  vars:
-  - money: 20000
-    land: 3acres
-    houses: 3
-    ansible.builtin.debug:
-     msg: "money is {{money}} and land is {{land}} and houses {{houses}}"
+    vars:
+    - money: 20000
+      land: 3acres
+      houses: 3
+      ansible.builtin.debug:
+       msg: "money is {{money}} and land is {{land}} and houses {{houses}}"
 
