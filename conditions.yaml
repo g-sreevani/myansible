@@ -11,7 +11,7 @@
 
   - name: print the command output
     ansible.builtin.debug:
-     msg: "output: {{out}}"
+     msg: "output: "{{out}}""
   - name: print exit status
     ansible.builtin.debug:
      msg: "{{out.rc}}"
@@ -21,4 +21,3 @@
     ansible.builtin.user:
      name: roboshop
      # if this expression is true then only this module will run
-     
