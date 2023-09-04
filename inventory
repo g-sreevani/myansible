@@ -1,3 +1,10 @@
 
 [mongodb]
 roboshop-us-dev-db-mongodb-01.joinmydevops.online
+
+
+
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+NAME=sivakumar-inventory
