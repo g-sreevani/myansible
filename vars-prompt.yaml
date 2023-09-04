@@ -7,7 +7,7 @@
   - name: PASSWORD
     prompt: enter password
     private: true # u can't see the values entered o screen
-    tasks:
-    - name: printing values
-      ansible.builtin.debug:
-       msg: "username is: {{USERNAME}},password is: {{PASSWORD}}"
+  tasks:
+  - name: printing values
+    ansible.builtin.debug:
+     msg: "username is: {{USERNAME}},password is: {{PASSWORD}}"
