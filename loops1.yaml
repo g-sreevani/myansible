@@ -1,0 +1,11 @@
+- name: loops in ansible
+  hosts: localhost # u no need to give username and password through ansible command line 
+  tasks:
+  - name: installing packages
+    ansible.builtin.yum:
+     name: "{{item}}"
+     state: installed
+    loop:
+     - postfix
+     - mailx
+     
